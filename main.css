@@ -68,13 +68,13 @@ a {
     display: inline-block;
     color: #525d61;
     animation-name: breath;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .tech-icons > a:nth-child(2n) {
-    animation-delay: 250ms;
+    animation-delay: 500ms;
 }
 
 .tech-icons > a + a {
@@ -101,11 +101,11 @@ a {
         transform: scale(1);
     }
 
-    5% {
-        transform: scale(1.1);
+    50% {
+        transform: scale(1.15);
     }
 
-    15% {
+    100% {
         transform: scale(1);
     }
 }
