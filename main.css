@@ -49,6 +49,11 @@ a {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    transition: color 200ms ease-out;
+}
+
+.tech-icons > a:hover {
+    color: #d2d70c;
 }
 
 .tech-icons > a:nth-child(2n) {
@@ -65,7 +70,7 @@ section {
 }
 
 .social-icons {
-    font-size: 200%;
+    font-size: 230%;
     margin-top: 1em;
     text-align: center;
 }
@@ -73,6 +78,11 @@ section {
 .social-icons > a {
     display: inline-block;
     color: #fff;
+    transition: transform 200ms ease-out;
+}
+
+.social-icons > a:hover {
+    transform: scale(1.2);
 }
 
 .social-icons > a + a {
