@@ -140,7 +140,7 @@ section {
     }
 
     header {
-        font-size: 120%;
+        font-size: 142%;
     }
 
     .tech-icons {
@@ -159,10 +159,10 @@ section {
     }
 
     header {
-        font-size: 140%;
+        font-size: 150%;
     }
 
     .tech-icons {
-        margin: 1em 0 1.5em;
+        margin-bottom: 1.2em;
     }
 }
