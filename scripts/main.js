@@ -22,3 +22,16 @@ function switchQuotes(firstTime) {
 }
 
 switchQuotes(true);
+
+
+/* years updater */
+
+var years = document.getElementsByClassName('years');
+var yearNow = (new Date()).getFullYear();
+
+for (var i = 0; i < years.length; i += 1) {
+  var elm = years[i];
+  var since = parseInt(elm.getAttribute('data-since'), 10);
+
+  elm.innerHTML = String(yearNow - since);
+}
