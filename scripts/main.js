@@ -1,37 +1,51 @@
 "use strict";
 
-/* switch quotes */
+(function switchQuotes() {
+  var quotes = document.getElementsByClassName('quote');
+  var shuffled = [];
+  var currQuote = 0;
+  var i, j, x;
 
-var quotes = document.getElementsByClassName('quote');
-var currQuote = 0;
+  for (i = 0; i < quotes.length; i += 1) {
+    shuffled.push(quotes[i]);
+  }
+  quotes[0].classList.remove('active');
 
-function switchQuotes(firstTime) {
-  var oldIndex = currQuote;
-  
-  do {
-    currQuote = Math.floor(Math.random() * quotes.length);
-  } while (currQuote === oldIndex && !firstTime);
+  for (i = shuffled.length - 1; i > 0; i -= 1) {
+    j = Math.floor(Math.random() * (i + 1));
 
-  quotes[oldIndex].classList.remove('active');
-  quotes[currQuote].classList.add('active');
+    x = shuffled[j];
+    shuffled[j] = shuffled[i];
+    shuffled[i] = x;
+  }
 
-  var innerText = quotes[currQuote].innerText;
-  var nextTime = innerText ? innerText.length * 50 + 4e3 : 10e3;
+  function switchQuotes() {
+    var oldIndex = currQuote;
+    currQuote += 1;
+    if (currQuote >= shuffled.length) {
+      currQuote = 0;
+    }
 
-  setTimeout(switchQuotes, nextTime);
-}
+    shuffled[oldIndex].classList.remove('active');
+    shuffled[currQuote].classList.add('active');
 
-switchQuotes(true);
+    var innerText = shuffled[currQuote].innerText;
+    var nextTime = innerText ? innerText.length * 50 + 4e3 : 10e3;
 
+    setTimeout(switchQuotes, nextTime);
+  }
 
-/* years updater */
+  switchQuotes();
+})();
 
-var years = document.getElementsByClassName('years');
-var yearNow = (new Date()).getFullYear();
+(function yearsUpdater() {
+  var years = document.getElementsByClassName('years');
+  var yearNow = (new Date()).getFullYear();
 
-for (var i = 0; i < years.length; i += 1) {
-  var elm = years[i];
-  var since = parseInt(elm.getAttribute('data-since'), 10);
+  for (var i = 0; i < years.length; i += 1) {
+    var elm = years[i];
+    var since = parseInt(elm.getAttribute('data-since'), 10);
 
-  elm.innerHTML = String(yearNow - since);
-}
+    elm.innerHTML = String(yearNow - since);
+  }
+})();
