@@ -49,6 +49,11 @@ a {
     color: #fff;
 }
 
+a:hover,
+a:focus {
+    color: #73909b;
+}
+
 header {
     font-size: 110%;
 }
@@ -210,18 +215,20 @@ section {
     vertical-align: bottom;
     line-height: 200px;
     overflow: hidden;
-    background: none;
+    background: #fff;
     border: 1px solid #fff;
-    width: 0.8em;
-    height: 0.8em;
-    border-radius: 0.5em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
     padding: 0;
     margin: 0;
     cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 200ms ease-out;
 }
 
 .marker-dot.active {
-    background: #fff;
+    opacity: 1;
 }
 
 @media (min-width: 370px) {
@@ -243,6 +250,12 @@ section {
 
     header {
         font-size: 120%;
+    }
+
+    .marker-dot {
+        width: 0.8em;
+        height: 0.8em;
+        border-radius: 0.5em;
     }
 }
 
