@@ -136,7 +136,7 @@ section {
 
 .quotes {
     margin-top: 3em;
-    height: 10em;
+    height: 11em;
     position: relative;
 }
 
@@ -197,6 +197,33 @@ section {
     margin-top: -2px;
 }
 
+.marker-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.marker-dot {
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 200px;
+    overflow: hidden;
+    background: none;
+    border: 1px solid #fff;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 0.5em;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.marker-dot.active {
+    background: #fff;
+}
+
 @media (min-width: 370px) {
     body {
         font-size: 14px;
@@ -251,6 +278,10 @@ section {
 
     .tech-icons > a {
         color: #2b363a;
+    }
+
+    .quotes {
+        height: 9em;
     }
 }
 
