@@ -74,11 +74,14 @@ header {
 .tech-icons {
     font-size: 180%;
     text-align: center;
-    margin: 0.5em 0 0.8em;
+    margin: 0.5em 0;
 }
 
 .tech-icons > a {
     display: inline-block;
+    vertical-align: top;
+    width: 1em;
+    text-decoration: none;
     color: #525d61;
     animation-name: breath;
     animation-duration: 2s;
@@ -99,6 +102,11 @@ header {
     margin-left: 0.4em;
 }
 
+.tech-icons .label {
+    display: block;
+    font-size: 20%;
+}
+
 section {
     max-width: 470px;
     margin: 0 auto;
@@ -112,6 +120,9 @@ section {
 
 .social-icons > a {
     display: inline-block;
+    vertical-align: top;
+    width: 1em;
+    text-decoration: none;
     color: #fff;
     transition: transform 200ms ease-out;
 }
@@ -122,6 +133,11 @@ section {
 
 .social-icons > a + a {
     margin-left: 0.4em;
+}
+
+.social-icons .label {
+    display: block;
+    font-size: 20%;
 }
 
 @keyframes breath {
@@ -139,7 +155,7 @@ section {
 }
 
 .quotes {
-    margin-top: 3em;
+    margin-top: 2em;
     height: 11em;
     position: relative;
 }
