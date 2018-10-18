@@ -18,12 +18,13 @@ body {
 
 .body-container {
     padding: 2em;
+    position: relative;
 }
 
 .body-container::after {
     content: "";
     display: block;
-    position: fixed;
+    position: absolute;
     background: #fff url("images/profile.jpg") top center repeat;
     background-size: cover;
     top: 0;
@@ -31,14 +32,12 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1000;
-    opacity: 1;
-    transition: all 500ms ease-in;
-    transition-delay: 1s;
 }
 
 body.loaded .body-container::after {
     left: -100%;
     opacity: 0;
+    transition: opacity 3s ease-out 1s, left 2ms linear 4s;
 }
 
 p {
