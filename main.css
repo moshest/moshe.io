@@ -23,7 +23,7 @@ body {
 .body-container::after {
     content: "";
     display: block;
-    position: absolute;
+    position: fixed;
     background: #fff url("images/profile.jpg") top center repeat;
     background-size: cover;
     top: 0;
