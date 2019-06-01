@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #fff url("images/profile.jpg?v=2") top center repeat;
+    background: #fff url("images/profile.jpg?v=3") top center repeat;
     background-size: cover;
     color: #fff;
     font-family: "Niramit", sans-serif;
@@ -26,7 +26,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    background: #fff url("images/profile.jpg?v=2") top center repeat;
+    background: #fff url("images/profile.jpg?v=3") top center repeat;
     background-size: cover;
     top: 0;
     left: 0;
