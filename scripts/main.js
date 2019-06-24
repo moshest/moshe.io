@@ -1,58 +1,54 @@
 "use strict";
 
-(function switchQuotes() {
+(function testimonials() {
+  var cntr = document.getElementById('quote-container');
   var quotes = document.getElementsByClassName('quote');
-  var dots = document.getElementsByClassName('marker-dot');
-  var shuffled = [];
-  var currQuote = quotes.length - 1;
-  var nextQuote = 0;
-  var nextTimeout = null;
-  var i, j, x;
+  var prev = document.getElementsByClassName('prev')[0];
+  var next = document.getElementsByClassName('next')[0];
 
-  for (i = 0; i < quotes.length; i += 1) {
-    shuffled.push(quotes[i]);
-    (function(i) {
-      dots[i].addEventListener('click', function () {
-        clearTimeout(nextTimeout);
-
-        nextQuote = i;
-        switchQuotes();
-      });
-    })(i);
-  }
-  quotes[0].classList.remove('active');
-  dots[0].classList.remove('active');
-
-  for (i = shuffled.length - 1; i > 0; i -= 1) {
-    j = Math.floor(Math.random() * (i + 1));
-
-    x = shuffled[j];
-    shuffled[j] = shuffled[i];
-    shuffled[i] = x;
-  }
-
-  function switchQuotes() {
-    var oldIndex = currQuote;
-    currQuote = nextQuote;
-
-    nextQuote += 1;
-    if (nextQuote >= shuffled.length) {
-      nextQuote = 0;
+  var drag = null;
+  cntr.addEventListener('mousedown', function(e) {
+    if (!drag) {
+      e.preventDefault();
     }
 
-    shuffled[oldIndex].classList.remove('active');
-    shuffled[currQuote].classList.add('active');
+    drag = { s: cntr.scrollLeft, x: e.clientX };
+  });
 
-    dots[oldIndex].classList.remove('active');
-    dots[currQuote].classList.add('active');
+  cntr.addEventListener('mousemove', function(e) {
+    if (!drag) return;
 
-    var innerText = shuffled[currQuote].innerText;
-    var nextTime = innerText ? innerText.length * 50 + 4e3 : 10e3;
+    cntr.scrollLeft = drag.s + drag.x - e.clientX;
+  });
 
-    nextTimeout = setTimeout(switchQuotes, nextTime);
-  }
+  document.addEventListener('mouseup', function(e) {
+    if (!drag) return;
 
-  switchQuotes();
+    e.preventDefault();
+    drag = null;
+  });
+
+  next.addEventListener('click', function() {
+    var n = quotes.length;
+    var w = cntr.scrollWidth;
+    var p = w / n;
+
+    cntr.scrollTo({
+      left: cntr.scrollLeft + 2 * p,
+      behavior: 'smooth'
+    });
+  });
+
+  prev.addEventListener('click', function() {
+    var n = quotes.length;
+    var w = cntr.scrollWidth;
+    var p = w / n;
+
+    cntr.scrollTo({
+      left: cntr.scrollLeft - 2 * p,
+      behavior: 'smooth'
+    });
+  });
 })();
 
 (function yearsUpdater() {

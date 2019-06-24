@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
 
   <title>Moshe Simantov</title>
@@ -23,14 +23,12 @@
         You're welcome to visit my personal website." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://moshe.io" />
-  <meta property="og:image" content="https://moshe.io/favicon/android-chrome-256x256.png" />
+  <meta property="og:image" content="https://moshe.io/favicon/android-chrome-512x512.png" />
 
-  <link href="https://fonts.googleapis.com/css?family=Niramit:300,400|Lora:400,400i,700i"
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,500,600|Open+Sans:300i"
         rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
-        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
-        crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css?v=10">
+  <link rel="stylesheet" href="styles/typicons/typicons.min.css">
+  <link rel="stylesheet" href="styles/main.css?v=0">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127829409-1"></script>
   <script>
@@ -42,166 +40,259 @@
   </script>
 </head>
 <body onload="document.body.className += ' loaded'">
-  <div class="body-container">
-    <header>
-      <h1 class="name-title">Moshe Simantov</h1>
-      <h3 class="name-subtitle">Entrepreneur, Software Architect, Freelancer</h3>
+  <header>
+    <div class="container">
+      <div id="introduction">This is me</div>
+      <h1>Moshe Simantov</h1>
 
-      <div class="tech-icons">
-        <a href="https://aws.amazon.com" target="_blank" title="Amazon Web Services">
-          <span class="fab fa-aws"></span>
-          <span class="label">AWS</span>
-        </a>
-        <a href="https://apple.com" target="_blank" title="Apple Inc.">
-          <span class="fab fa-apple"></span>
-          <span class="label">Apple</span>
-        </a>
-        <a href="https://www.docker.com" target="_blank" title="Docker">
-          <span class="fab fa-docker"></span>
-          <span class="label">Docker</span>
-        </a>
-        <a href="https://nodejs.org/en/" target="_blank" title="Node.js">
-          <span class="fab fa-node-js"></span>
-          <span class="label">Node.js</span>
-        </a>
-        <a href="https://reactjs.org" target="_blank" title="React.js">
-          <span class="fab fa-react"></span>
-          <span class="label">React</span>
-        </a>
-        <a href="https://python.org" target="_blank" title="Python">
-          <span class="fab fa-python"></span>
-          <span class="label">Python</span>
-        </a>
-        <a href="https://www.w3.org" target="_blank" title="W3C">
-          <span class="fab fa-html5"></span>
-          <span class="label">W3C</span>
-        </a>
+      <p>An Entrepreneur, Software Architect and a Freelancer.<br />
+        Basically I'm good at getting things done.</p>
+
+      <a href="#contact" class="button button-primary">Contact Me</a>
+      <a href="moshe-simantov.pdf" download class="button" target="_blank">Get Resume</a>
+    </div>
+  </header>
+
+  <section id="overview">
+    <div class="container">
+      <div id="portrait">
+        <img src="images/IMG_9825.jpg" alt="Moshe Simantov" />
       </div>
-    </header>
-    <section>
-        <p>I have started programming computer games since age 11. I have over
-          <span class="years" data-since="2003">15</span> years of experience managing and
-          developing web start-ups. I'm most comfortable coding in JavaScript, Python and C++, in
-          which I have a solid foundation and dynamic skill set, but also have experience in
-          React.js, AWS, Cryptography, MongoDB, MySQL, PHP, Java and similar technologies.</p>
 
-      <p>I graduated with a Bachelor's degree from
-        <a href="http://new.huji.ac.il/en" target="_blank">the Hebrew University of Jerusalem</a>,
-        and have since worked in several positions with teams of varying size.
-        I'm an entrepreneur in my blood and always looking for new ways to scale and improve things.
-        My biggest inspiration in life is the nature evolution process and I try to implement it
-        on my day-to-day actions.
-      </p>
+      <h2>Introduction</h2>
 
-        <p>Right now I'm working <a href="https://neuledge.com" target="_blank">on my own start-up</a>
-          and doing some freelancing work for a few clients. Please feel free to contact me on any
-          topic.</p>
+      <p>I have started programming computer games since age 11. At age 21, I found faith in
+        science, became agnostic and graduated with a Bachelor's degree from the Hebrew University
+        of Jerusalem.</p>
+      <p>I have over <span class="years" data-since="2003">16</span> years of experience design
+        and building web start-ups. Right now I'm working
+        <a href="https://neuledge.com" target="_blank">on my own start-up</a> and earn a living by
+        freelance for a few clients.</p>
+    </div>
+  </section>
 
-        <div class="social-icons">
-          <a href="https://www.facebook.com/moshe.simantov/" target="_blank" title="Facebook">
-            <span class="fab fa-facebook"></span>
-            <span class="label">Facebook</span>
-          </a>
-          <a href="https://www.linkedin.com/in/moshesimantov" target="_blank" title="LinkenIn">
-            <span class="fab fa-linkedin"></span>
-            <span class="label">LinkedIn</span>
-          </a>
-          <a href="https://www.github.com/moshest" target="_blank" title="Github">
-            <span class="fab fa-github"></span>
-            <span class="label">Github</span>
-          </a>
-          <a href="https://stackoverflow.com/users/518153/moshe-simantov" target="_blank"
-             title="Stack Overflow">
-            <span class="fab fa-stack-overflow"></span>
-            <span class="label">S. Overflow</span>
-          </a>
-          <a href="https://www.instagram.com/moshe.simantov/" target="_blank" title="Instagram">
-            <span class="fab fa-instagram"></span>
-            <span class="label">Instagram</span>
-          </a>
-          <a href="mailto:me@moshe.io" target="_blank" title="E-Mail">
-            <span class="fas fa-envelope"></span>
-            <span class="label">E-Mail</span>
-          </a>
+  <section id="skills" class="centered">
+    <div class="container">
+      <h2>My Skills</h2>
+      <p class="teaser">Over the years, I acquired a wide range of capabilities.</p>
+
+      <div class="skills">
+        <div class="skill">
+          <span class="typcn typcn-code"></span>
+          <h3>High-End Architectures</h3>
+          <p>Ability to design and implement complicated tasks in a simple and elegant structure
+            with maximum flexibility.</p>
         </div>
 
+        <div class="skill">
+          <span class="typcn typcn-arrow-sync"></span>
+          <h3>Agile Development</h3>
+          <p>Focus on the real value I added to the project and leading dev. team to reach
+            milestones as quickly as possible.</p>
+        </div>
+
+        <div class="skill">
+          <span class="typcn typcn-input-checked"></span>
+          <h3>Product Specifications</h3>
+          <p>Help client and end-user define what they need, while eliminating any fractions and
+          incomplete goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="numbers">
+    <div class="container">
+      <ul>
+        <li>
+          <span class="number">29</span>
+          Years Old
+        </li>
+        <li>
+          <span class="number">50</span>
+          Projects
+        </li>
+        <li>
+          <span class="number">25K</span>
+          Coding Hours
+        </li>
+        <li>
+          <span class="number">2M</span>
+          Lines of Code
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="technologies">
+    <div class="container">
+      <h2>Technologies</h2>
+      <p class="teaser">That's what I do best.</p>
+
+      <h4>Titles</h4>
+      <ul class="tags">
+        <li>CTO</li>
+        <li>VP R&D</li>
+        <li>Full-Stack Developer</li>
+      </ul>
+
+      <h4>Languages</h4>
+      <ul class="tags">
+        <li><a href="https://nodejs.org" target="_blank" rel="nofollow">Node.js</a></li>
+        <li><a href="https://www.python.org" target="_blank" rel="nofollow">Python</a></li>
+        <li>C / C++</li>
+        <li><a href="https://www.typescriptlang.org" target="_blank" rel="nofollow">TypeScript</a></li>
+        <li><a href="https://reactjs.org" target="_blank">React.js</a></li>
+        <li><a href="https://www.w3.org" target="_blank" rel="nofollow">HTML5</a></li>
+      </ul>
+
+      <h4>Environments</h4>
+      <ul class="tags">
+        <li><a href="https://aws.amazon.com" target="_blank" rel="nofollow">AWS</a></li>
+        <li><a href="https://www.apple.com" target="_blank" rel="nofollow">Apple</a></li>
+        <li><a href="https://www.mongodb.com" target="_blank" rel="nofollow">MongoDB</a></li>
+        <li><a href="https://aws.amazon.com/dynamodb/" target="_blank" rel="nofollow">DynamoDB</a></li>
+        <li><a href="https://docker.com" target="_blank" rel="nofollow">Docker</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="testimonials" class="centered">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <p class="teaser">A few compliments from my client and friends.</p>
+
+      <div id="quote-container" class="container">
         <div class="quotes">
-          <div class="quote active">
-            <p>
-              “I met Moshe about <span class="years" data-since="2010">8</span> years ago. I had
-              one meeting with him and I knew that I had found a rare and real professional.
-              I didn't get just service of the highest standard but I also gained a friend.”
-            </p>
-            <div class="quote-source">Itzik, Jeepland</div>
-          </div>
           <div class="quote">
             <p>
-              “There are practically no add-ons or requests that Moshe can't do. The positive
+              There are practically no add-ons or requests that Moshe can't do. The positive
               feedback I get from my customers and my employees tells the whole story. Highly
-              recommended!”
+              recommended!
             </p>
             <div class="quote-source">Itzik, Jeepland</div>
           </div>
           <div class="quote">
             <p>
-              “The questions Moshe asked, the attention to detail, the vision of seeing how the
-              whole system would work together and even things I hadn't thought about, brought me to
-              giving him the job of recreating my online store.”
-            </p>
-            <div class="quote-source">Itzik, Jeepland</div>
-          </div>
-          <div class="quote">
-            <p>
-              “Moshe was gifted with the ability to design a very high technological architecture.
+              Moshe was gifted with the ability to design a very high technological architecture.
               He is curious, initiator, inventor and manager with high professional and managerial
-              skills. He's the best programmer we've ever had!”
+              skills. He's the best programmer we've ever had!
             </p>
             <div class="quote-source">Shmulik, IBand</div>
           </div>
           <div class="quote">
             <p>
-              “Moshe managed the development team in Israel and led it to new heights. All this is
+              Moshe has been a key actor in taking TrackingDesk forward. His ability to identify
+              frictions-points and solve them fast and elegantly is simply outstanding.
+            </p>
+            <div class="quote-source">Laurent, TrackingDesk</div>
+          </div>
+          <div class="quote">
+            <p>
+              I met Moshe about <span class="years" data-since="2010">9</span> years ago. I had
+              one meeting with him and I knew that I had found a rare and real professional.
+              I didn't get just service of the highest standard but I also gained a friend.
+            </p>
+            <div class="quote-source">Itzik, Jeepland</div>
+          </div>
+          <div class="quote">
+            <p>
+              Moshe managed the development team in Israel and led it to new heights. All this is
               done with great modesty and interpersonal ability. Thanks to him, dreams have become
-              reality.”
+              reality.
             </p>
             <div class="quote-source">Shmulik, IBand</div>
           </div>
           <div class="quote">
             <p>
-              “Moshe has been a key actor in taking TrackingDesk forward. His ability to identify
-              frictions-points and solve them fast and elegantly is simply outstanding.”
+              While Moshe applies the strict developer playbook that gives stability to our code,
+              he has also the creative mind that can work around challenges to get things done.
             </p>
             <div class="quote-source">Laurent, TrackingDesk</div>
           </div>
           <div class="quote">
             <p>
-              “While Moshe applies the strict developer playbook that gives stability to our code,
-              he has also the creative mind that can work around challenges to get things done.”
+              The questions Moshe asked, the attention to detail, the vision of seeing how the
+              whole system would work together and even things I hadn't thought about, brought me to
+              giving him the job of recreating my online store.
             </p>
-            <div class="quote-source">Laurent, TrackingDesk</div>
+            <div class="quote-source">Itzik, Jeepland</div>
           </div>
           <div class="quote">
             <p>
-              “I had the pleasure of working with Moshe, while he was
+              I had the pleasure of working with Moshe, while he was
               holding the CTO position and I must say he’s a real pro! Not only as senior developer
-              and architect, but also as skilled manager and a colleague.”
+              and architect, but also as skilled manager and a colleague.
             </p>
             <div class="quote-source">Raanan, Doremeet</div>
           </div>
-
-          <div class="marker-dots">
-            <button type="button" class="marker-dot active">1</button>
-            <button type="button" class="marker-dot">2</button>
-            <button type="button" class="marker-dot">3</button>
-            <button type="button" class="marker-dot">4</button>
-            <button type="button" class="marker-dot">5</button>
-            <button type="button" class="marker-dot">6</button>
-            <button type="button" class="marker-dot">7</button>
-            <button type="button" class="marker-dot">8</button>
-          </div>
         </div>
-    </section>
-  </div>
-  <script src="scripts/main.js?v=4"></script>
+      </div>
+
+      <button class="prev">
+        <span class="typcn typcn-media-play-reverse"></span>
+      </button>
+      <button class="next">
+        <span class="typcn typcn-media-play"></span>
+      </button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div id="contacts" class="column">
+        <h4>Say Hi</h4>
+        <p>I wont bite, promise.</p>
+
+        <ul>
+          <li>
+            <a href="mailto:me@moshe.io" title="My email">
+              me@moshe.io
+            </a>
+          </li>
+          <li>
+            <a href="tel:+972-54-231-6054" title="My mobile">
+              +972 54.231.6054
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="follows" class="column">
+        <h4>Follow Me</h4>
+        <p>Be a stalker, get some intel.</p>
+
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/moshe.simantov/" target="_blank" title="Facebook">
+              <span class="typcn typcn-social-facebook"></span>
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/moshesimantov" target="_blank" title="LinkedIn">
+              <span class="typcn typcn-social-linkedin"></span>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/moshe.simantov/" target="_blank" title="Instagram">
+              <span class="typcn typcn-social-instagram"></span>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com/moshest" target="_blank" title="Github">
+              <span class="typcn typcn-social-github"></span>
+              Github
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script src="scripts/main.js?v=5"></script>
 </body>
 </html>

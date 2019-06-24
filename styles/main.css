@@ -1,0 +1,520 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    margin: 0 2em;
+}
+
+a {
+    color: #55b2ff;
+    text-decoration: underline;
+}
+
+a:hover, a:focus {
+    color: #c19aff;
+}
+
+h1 {
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+p {
+    text-align: justify;
+}
+
+header {
+    background: #f9f9ff;
+    background: linear-gradient(10deg, #f9f9ff 30%, #def 100%);
+    padding: 6em 0 4em;
+}
+
+section {
+    padding: 6em 0;
+}
+
+.teaser {
+    margin: -1em 0 2em;
+}
+
+section.centered h2, section.centered .teaser {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    border: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button-primary {
+    color: #fff !important;
+    background: rgb(125,235,114);
+    background: linear-gradient(90deg, #c19aff 0%, #55b2ff 100%);
+    transition: box-shadow 0.3s ease;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+    box-shadow: 0 1.2em 1.2em 0 rgba(187, 192, 255, 0.3);
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 920px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* header */
+
+header #introduction,
+header h1 {
+    text-transform: uppercase;
+}
+
+header #introduction {
+    font-weight: 500;
+}
+
+header h1 {
+    font-size: 320%;
+    font-weight: 600;
+    margin: 0;
+}
+
+header p {
+    font-size: 110%;
+    margin: 0.5em 0 2em;
+    text-align: left;
+}
+
+/* overview */
+
+#portrait {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 6em;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 1em 1em rgba(187, 192, 255, 0.2);
+}
+
+#portrait > img {
+    max-width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    #portrait {
+        width: 300px;
+        height: 300px;
+    }
+
+    #overview .container {
+        position: relative;
+        padding-left: 350px;
+    }
+
+    #portrait {
+        position: absolute;
+        margin: 0;
+        left: 0;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #overview .container {
+        padding-left: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #overview .container {
+        padding-left: 450px;
+    }
+}
+
+/* skills */
+
+#skills {
+    background: #f9f9ff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(154, 154, 255, 0.2) 100%);
+}
+
+.skill {
+    text-align: center;
+    padding: 1em 0;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.skill > span {
+    font-size: 400%;
+}
+
+.skill h3 {
+    font-size: 140%;
+    margin: 0.5em 0;
+}
+
+.skill p {
+    margin-top: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .skills {
+        padding-top: 4em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skill {
+        width: 30%;
+        margin: 0;
+        font-size: 80%;
+    }
+
+    .skill > span {
+        margin: 0.4em 0;
+    }
+
+    .skill h3 {
+        margin: 1em 0;
+    }
+}
+
+/* numbers */
+
+#numbers {
+    padding: 7em 0;
+    color: #fff;
+    background: #55b2ff;
+    background: linear-gradient(90deg, #c19aff 0%, #55b2ff 100%);
+}
+
+#numbers ul {
+    list-style: none;
+    margin: -6em 0;
+    padding: 0;
+}
+
+#numbers ul > li {
+    margin: 4em 0;
+    font-size: 110%;
+    text-align: center;
+}
+
+#numbers .number {
+    display: block;
+    font-weight: 600;
+    font-size: 300%;
+}
+
+@media (min-width: 768px) {
+    #numbers ul {
+        margin: -4em 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #numbers ul > li {
+        margin: 0;
+        display: inline-block;
+    }
+}
+
+/* techs */
+
+.tags {
+    list-style: none;
+    margin: 0;
+    padding: 2em 0;
+    line-height: 3em;
+}
+
+h4 + .tags {
+    margin-top: -2em;
+}
+
+.tags > li {
+    display: inline-block;
+    border-radius: 2em;
+    background: #9dd7ff;
+    color: #fff;
+    padding: 0.2em 1em;
+    line-height: 2em;
+    font-weight: 300;
+    vertical-align: bottom;
+    transition: background-color 0.2s ease-in;
+}
+
+.tags > li:hover {
+    background: #c19aff;
+}
+
+.tags > li a {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* testimonials */
+
+#testimonials {
+    background: #f9f9ff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(154, 154, 255, 0.2) 100%);
+    padding: 6em 0;
+}
+
+#quote-container {
+    scroll-behavior: smooth;
+    cursor: default;
+    margin: 0 -2em;
+    overflow: auto;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+#quote-container::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.quotes {
+    padding: 4em 2em;
+    width: 2200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote {
+    position: relative;
+    width: 250px;
+    padding: 1em 2em 3em;
+    background: #fff;
+    box-shadow: 0 1.2em 1.2em rgba(187, 192, 255, 0.3);
+    font-size: 90%;
+}
+
+.quote p {
+    text-align: left;
+    font-style: italic;
+    font-weight: 400;
+    color: #999;
+}
+
+.quote-source {
+    font-weight: 600;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 1em;
+    left: 1.67em;
+}
+
+#testimonials .prev,
+#testimonials .next {
+    display: none;
+}
+
+@media (min-width: 400px) {
+    .quotes {
+        width: 2800px;
+    }
+
+    .quote {
+        width: 320px;
+    }
+}
+
+@media (min-width: 768px) {
+    #testimonials .container {
+        position: relative;
+    }
+
+    #quote-container {
+        margin: 0;
+    }
+
+    #testimonials .prev,
+    #testimonials .next {
+        display: block;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        font-size: 250%;
+        bottom: 35%;
+        width: 1em;
+        height: 1em;
+        color: #ccc;
+    }
+
+    #testimonials .prev:hover,
+    #testimonials .next:hover,
+    #testimonials .prev:focus,
+    #testimonials .next:focus {
+        color: #55b2ff;
+        cursor: pointer;
+    }
+
+    #testimonials .prev {
+        left: -1.5em;
+    }
+
+    #testimonials .next {
+        right: -1.5em;
+    }
+
+    .quotes {
+        width: 2850px;
+    }
+
+    .quote {
+        width: 320px;
+    }
+}
+
+@media (min-width: 992px) {
+    .quotes {
+        width: 3650px;
+    }
+
+    .quote {
+        width: 410px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .quotes {
+        width: 4500px;
+    }
+
+    .quote {
+        width: 525px;
+    }
+}
+
+/* contact */
+
+#contact {
+    background: #0d202c;
+    color: #aaa;
+    font-weight: 200;
+}
+
+#contact h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
+}
+
+#contact p {
+    margin: 0.5em 0 1em;
+    font-size: 90%;
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#contacts li {
+    margin: 0.5em 0;
+}
+
+#follows {
+    margin-top: 6em;
+}
+
+#follows ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 60%;
+}
+
+#follows ul > li {
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+#follows ul > li + li {
+    margin-left: 1em;
+}
+
+#follows .typcn {
+    display: block;
+    font-size: 400%;
+}
+
+
+@media (min-width: 768px) {
+    #contact .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #contacts ul {
+        margin-top: 2em;
+    }
+
+    #follows {
+        margin-top: 0;
+    }
+}
