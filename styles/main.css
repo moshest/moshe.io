@@ -142,6 +142,7 @@ header p {
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 1em 1em rgba(187, 192, 255, 0.2);
+    border: 5px solid #fff;
 }
 
 #portrait > img {
