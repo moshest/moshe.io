@@ -63,7 +63,7 @@
   }
 })();
 
-(function analytics() {
+(function tracking() {
   var links = document.getElementsByTagName('A');
 
   function track() {
