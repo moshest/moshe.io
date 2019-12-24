@@ -62,3 +62,13 @@
     elm.innerHTML = String(yearNow - since);
   }
 })();
+
+(function analytics() {
+  var links = document.getElementsByTagName('A');
+
+  for (var i = 0; i < links.length; i += 1) {
+    links[i].addEventListener('click', function() {
+      ga('send', 'event', 'Button', 'Click', this.innerText);
+    });
+  }
+})();
