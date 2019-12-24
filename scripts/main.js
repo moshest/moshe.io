@@ -68,7 +68,7 @@
 
   function track() {
     analytics.track(this.getAttribute('title') || this.innerText, {
-      content: innerText,
+      content: this.innerText,
       location: this.href
     });
   }
