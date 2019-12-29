@@ -64,8 +64,6 @@
 })();
 
 (function tracking() {
-  var links = document.getElementsByTagName('A');
-
   function track() {
     analytics.track(this.getAttribute('title') || this.innerText, {
       content: this.innerText,
@@ -73,8 +71,16 @@
     });
   }
 
-  for (var i = 0; i < links.length; i += 1) {
+  var i;
+
+  var links = document.getElementsByTagName('A');
+  for (i = 0; i < links.length; i += 1) {
     links[i].addEventListener('click', track);
     links[i].addEventListener('contextmenu', track);
+  }
+
+  var buttons = document.getElementsByTagName('BUTTON');
+  for (i = 0; i < links.length; i += 1) {
+    buttons[i].addEventListener('click', track);
   }
 })();
