@@ -65,7 +65,10 @@
 
 (function tracking() {
   function track() {
-    analytics.track(this.getAttribute('title') || this.innerText, {
+    var event = this.getAttribute('title') || this.innerText;
+
+    analytics.track(event, {
+      event: event,
       content: this.innerText,
       location: this.href
     });
