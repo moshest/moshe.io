@@ -6,6 +6,22 @@
   var prev = document.getElementsByClassName('prev')[0];
   var next = document.getElementsByClassName('next')[0];
 
+  function unbindScroll() {
+    cntr.removeEventListener('scroll', onScroll);
+  }
+
+  function onScroll() {
+    unbindScroll();
+
+    const event = 'Testimonials Scrolled';
+    analytics.track(event, {
+      event: event,
+      location: this.href
+    });
+  }
+
+  cntr.addEventListener('scroll', onScroll);
+
   var drag = null;
   cntr.addEventListener('mousedown', function(e) {
     if (!drag) {
@@ -33,6 +49,8 @@
     var w = cntr.scrollWidth;
     var p = w / n;
 
+    unbindScroll();
+
     cntr.scrollTo({
       left: cntr.scrollLeft + 2 * p,
       behavior: 'smooth'
@@ -43,6 +61,8 @@
     var n = quotes.length;
     var w = cntr.scrollWidth;
     var p = w / n;
+
+    unbindScroll();
 
     cntr.scrollTo({
       left: cntr.scrollLeft - 2 * p,
@@ -83,7 +103,7 @@
   }
 
   var buttons = document.getElementsByTagName('BUTTON');
-  for (i = 0; i < links.length; i += 1) {
+  for (i = 0; i < buttons.length; i += 1) {
     buttons[i].addEventListener('click', track);
   }
 })();
