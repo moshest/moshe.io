@@ -5,9 +5,16 @@
   var quotes = document.getElementsByClassName('quote');
   var prev = document.getElementsByClassName('prev')[0];
   var next = document.getElementsByClassName('next')[0];
+  var timer = null;
 
   function unbindScroll() {
+    timer && clearTimeout(timer);
     cntr.removeEventListener('scroll', onScroll);
+
+    timer = setTimeout(function () {
+      timer = null;
+      cntr.addEventListener('scroll', onScroll);
+    }, 2000);
   }
 
   function onScroll() {
