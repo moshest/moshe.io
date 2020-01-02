@@ -53,7 +53,7 @@ section {
     margin: -1em 0 2em;
 }
 
-section.centered h2, section.centered .teaser {
+section.centered h2, section.centered .teaser, section.centered .content {
     text-align: center;
 }
 
@@ -71,7 +71,7 @@ section.centered h2, section.centered .teaser {
 
 .button-primary {
     color: #fff !important;
-    background: rgb(125,235,114);
+    background: #c19aff;
     background: linear-gradient(90deg, #c19aff 0%, #55b2ff 100%);
     transition: box-shadow 0.3s ease;
 }
@@ -79,6 +79,14 @@ section.centered h2, section.centered .teaser {
 .button-primary:hover,
 .button-primary:focus {
     box-shadow: 0 1.2em 1.2em 0 rgba(187, 192, 255, 0.3);
+}
+
+.input {
+    padding: 0.5em;
+    font-size: 1em;
+    color: #0d202c;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: none;
 }
 
 @media (min-width: 400px) {
@@ -444,6 +452,44 @@ h4 + .tags {
     }
 }
 
+/* get started */
+
+#get-started {
+    background: #492e5e;
+    background: linear-gradient(180deg, #182747 0%, #0d202c 100%);
+    color: #fff;
+    padding: 2em 0;
+}
+
+#get-started h2 {
+    font-weight: 400;
+}
+
+#get-started .teaser {
+    font-weight: 100;
+}
+
+#get-started .button-primary {
+    min-width: 150px;
+    font-size: 1em;
+    border: 3px solid #fff;
+    background: #2273b7;
+    background: linear-gradient(to left, #193551, #2273b7, #193551);
+    background-size: 200% 100%;
+    animation: button-roll 6s ease-in-out infinite;
+}
+
+#get-started .button-primary:hover,
+#get-started .button-primary:focus {
+    box-shadow: 0 0 1em 0.2em #fff;
+}
+
+@keyframes button-roll {
+    0%{background-position:0 0}
+    100%{background-position:200% 0}
+}
+
+
 /* contact */
 
 #contact {
@@ -474,7 +520,7 @@ h4 + .tags {
     padding: 0;
 }
 
-#contacts li {
+#say-hi li {
     margin: 0.5em 0;
 }
 
@@ -511,7 +557,7 @@ h4 + .tags {
         justify-content: space-between;
     }
 
-    #contacts ul {
+    #say-hi ul {
         margin-top: 2em;
     }
 
