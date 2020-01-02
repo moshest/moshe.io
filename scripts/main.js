@@ -109,3 +109,21 @@
     buttons[i].addEventListener('click', track);
   }
 })();
+
+
+(function share() {
+  if (!navigator.share) return;
+
+  var link = document.getElementById('share-a-friend');
+
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    navigator.share({
+      title: 'Moshe.io',
+      text: 'Checkout Moshe Simantov profile',
+      url: 'https://moshe.io',
+    })
+  });
+  link.href = '/';
+})();
