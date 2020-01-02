@@ -20,7 +20,9 @@
     });
   }
 
-  cntr.addEventListener('scroll', onScroll);
+  document.addEventListener('DOMContentLoaded', function () {
+    cntr.addEventListener('scroll', onScroll);
+  });
 
   var drag = null;
   cntr.addEventListener('mousedown', function(e) {
