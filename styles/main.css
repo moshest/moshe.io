@@ -455,8 +455,8 @@ h4 + .tags {
 /* get started */
 
 #get-started {
-    background: #492e5e;
-    background: linear-gradient(180deg, #254572, #0d202c);
+    background: #152d45;
+    background: linear-gradient(#254572, #152d45);
     color: #fff;
     padding: 2em 0;
 }
@@ -495,6 +495,7 @@ h4 + .tags {
 
 #contact {
     background: #0d202c;
+    background: linear-gradient(#152d45, #0d202c);
     color: #aaa;
     font-weight: 200;
 }
