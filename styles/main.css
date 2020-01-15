@@ -533,8 +533,10 @@ footer {
     font-weight: 400;
 }
 
-.question:focus > button {
+.question:focus > button,
+.question > button:focus {
     cursor: default;
+    outline: none;
 }
 
 .question > button:before {
@@ -547,7 +549,8 @@ footer {
     transition: height 0.4s ease-in-out;
 }
 
-.question:focus > p {
+.question:focus > p,
+.question > button:focus + p {
     height: 100px;
 }
 
