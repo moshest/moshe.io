@@ -94,7 +94,10 @@
 
 (function tracking() {
   function track() {
-    var event = this.getAttribute('title') || this.innerText;
+    var event =
+      this.getAttribute('data-action')
+      || this.getAttribute('title')
+      || this.innerText;
 
     analytics.track(event, {
       event: event,

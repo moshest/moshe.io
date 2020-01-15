@@ -35,14 +35,13 @@ h2 {
     font-size: 200%;
 }
 
-p {
-    text-align: justify;
+h3 {
+    font-size: 130%;
+    font-weight: 200;
 }
 
-header {
-    background: #f9f9ff;
-    background: linear-gradient(10deg, #f9f9ff 30%, #def 100%);
-    padding: 6em 0 4em;
+p {
+    text-align: justify;
 }
 
 section {
@@ -53,7 +52,10 @@ section {
     margin: -1em 0 2em;
 }
 
-section.centered h2, section.centered .teaser, section.centered .content {
+section.centered h2,
+section.centered h3,
+section.centered .teaser,
+section.centered .content {
     text-align: center;
 }
 
@@ -119,6 +121,12 @@ section.centered h2, section.centered .teaser, section.centered .content {
 }
 
 /* header */
+
+header {
+    background: #f9f9ff;
+    background: linear-gradient(10deg, #f9f9ff 30%, #def 100%);
+    padding: 6em 0 4em;
+}
 
 header #introduction,
 header h1 {
@@ -452,12 +460,17 @@ h4 + .tags {
     }
 }
 
+/* footer */
+
+footer {
+    background: #0d202c;
+    background: linear-gradient(#254572, #0d202c);
+    color: #fff;
+}
+
 /* get started */
 
 #get-started {
-    background: #152d45;
-    background: linear-gradient(#254572, #152d45);
-    color: #fff;
     padding: 2em 0;
 }
 
@@ -485,18 +498,74 @@ h4 + .tags {
     box-shadow: 0 0 1em 0.2em #fff;
 }
 
+#get-started .button {
+    color: #f8bc00;
+}
+
 @keyframes button-roll {
     0%{background-position:0 0}
     100%{background-position:200% 0}
 }
 
 
+/* faq */
+
+#faq {
+    padding: 2em 0 0;
+}
+
+.question {
+    font-weight: 200;
+    outline: none;
+}
+
+.question > button {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: 0;
+    color: #f8bc00;
+    width: 100%;
+    text-align: left;
+    font-size: 110%;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.question:focus > button {
+    cursor: default;
+}
+
+.question > button:before {
+    content: "Q: ";
+}
+
+.question > p {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-in-out;
+}
+
+.question:focus > p {
+    height: 100px;
+}
+
+@media (min-width: 768px) {
+    .question {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .question > p {
+        padding-left: 1.3em;
+    }
+}
+
+
 /* contact */
 
 #contact {
-    background: #0d202c;
-    background: linear-gradient(#152d45, #0d202c);
-    color: #aaa;
     font-weight: 200;
 }
 
