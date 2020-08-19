@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    color: #222;
+    color: #0c040d;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -17,12 +17,12 @@ body {
 }
 
 a {
-    color: #55b2ff;
+    color: #2f5994;
     text-decoration: underline;
 }
 
 a:hover, a:focus {
-    color: #c19aff;
+    color: #542158;
 }
 
 h1 {
@@ -72,15 +72,15 @@ section.centered .content {
 }
 
 .button-primary {
-    color: #fff !important;
-    background: #c19aff;
-    background: linear-gradient(90deg, #c19aff 0%, #55b2ff 100%);
+    color: #222 !important;
+    background: #fff;
+    border-radius: 2em;
     transition: box-shadow 0.3s ease;
 }
 
 .button-primary:hover,
 .button-primary:focus {
-    box-shadow: 0 1.2em 1.2em 0 rgba(187, 192, 255, 0.3);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
 .input {
@@ -123,8 +123,9 @@ section.centered .content {
 /* header */
 
 header {
-    background: #f9f9ff;
-    background: linear-gradient(10deg, #f9f9ff 30%, #d0eaff 100%);
+    background: #2c042f;
+    background: linear-gradient(#0b141f, #421945);
+    color: #fff;
     padding: 6em 0 4em;
 }
 
@@ -139,8 +140,16 @@ header #introduction {
 
 header h1 {
     font-size: 320%;
-    font-weight: 600;
-    margin: 0;
+    font-weight: 400;
+    margin: 0.2em 0 0.4em;
+}
+
+header a {
+    color: #fff;
+}
+
+header a:hover {
+    color: #ee53c2;
 }
 
 header p {
@@ -200,8 +209,8 @@ header p {
 /* skills */
 
 #skills {
-    background: #f9f9ff;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(154, 154, 255, 0.2) 100%);
+    background: #fef9ff;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(45, 12, 47, 0.04));
 }
 
 .skill {
@@ -251,15 +260,14 @@ header p {
 /* numbers */
 
 #numbers {
-    padding: 7em 0;
+    padding: 5em 0;
     color: #fff;
-    background: #55b2ff;
-    background: linear-gradient(90deg, #c19aff 0%, #55b2ff 100%);
+    background: #2d0c2f;
 }
 
 #numbers ul {
     list-style: none;
-    margin: -6em 0;
+    margin: -4em 0;
     padding: 0;
 }
 
@@ -273,11 +281,12 @@ header p {
     display: block;
     font-weight: 600;
     font-size: 300%;
+    line-height: 1.2em;
 }
 
 @media (min-width: 768px) {
     #numbers ul {
-        margin: -4em 0;
+        margin: 0;
         display: flex;
         justify-content: space-between;
     }
@@ -304,18 +313,18 @@ h4 + .tags {
 .tags > li {
     display: inline-block;
     border-radius: 2em;
-    background: #66b9ff;
+    background: #1b2a40;
     color: #fff;
     padding: 0.2em 1em;
     line-height: 2em;
     font-weight: 300;
     vertical-align: bottom;
-    transition: background-color 0.2s ease-in;
+    transition: all 0.2s ease-in;
     cursor: default;
 }
 
 .tags > li:hover {
-    background: #c19aff;
+    background: #4d374f;
 }
 
 .tags > li a {
@@ -328,7 +337,7 @@ h4 + .tags {
 
 #testimonials {
     background: #f9f9ff;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(154, 154, 255, 0.25) 100%);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(196, 187, 196, 0.25));
     padding: 6em 0;
 }
 
@@ -359,8 +368,9 @@ h4 + .tags {
     width: 250px;
     padding: 1em 2em 3em;
     background: #fff;
-    box-shadow: 0 1.2em 1.2em rgba(187, 192, 255, 0.3);
+    box-shadow: 0 0.6em 2em rgba(195, 158, 194, 0.3);
     font-size: 90%;
+    border-radius: 2em;
 }
 
 .quote p {
@@ -421,7 +431,7 @@ h4 + .tags {
     #testimonials .next:hover,
     #testimonials .prev:focus,
     #testimonials .next:focus {
-        color: #55b2ff;
+        color: #2c042f;
         cursor: pointer;
     }
 
@@ -465,8 +475,16 @@ h4 + .tags {
 /* footer */
 
 footer {
-    background: #0d202c;
-    background: linear-gradient(#254572, #0d202c);
+    background: #080a25;
+    background: linear-gradient(#281036, #080a25);
+    color: #fff;
+}
+
+footer a {
+    color: #ffbb28;
+}
+
+footer a:hover, footer a:focus  {
     color: #fff;
 }
 
@@ -488,10 +506,11 @@ footer {
     min-width: 150px;
     font-size: 1em;
     border: 3px solid #fff;
-    border-radius: 2px;
-    background: #2273b7;
-    background: linear-gradient(to left, #193551, #2273b7, #193551);
+    border-radius: 2em;
+    background: #8b185d;
+    background: linear-gradient(to left, #441148, #8b185d, #441148);
     background-size: 200% 100%;
+    color: #fff !important;
     animation: button-roll 4s ease-in-out infinite;
 }
 
@@ -501,7 +520,7 @@ footer {
 }
 
 #get-started .button {
-    color: #f8bc00;
+    color: #ffbb28;
 }
 
 @keyframes button-roll {
@@ -527,7 +546,7 @@ footer {
     margin: 0;
     padding: 0;
     background: 0;
-    color: #f8bc00;
+    color: #ffbb28;
     width: 100%;
     text-align: left;
     font-size: 110%;
