@@ -17,12 +17,12 @@ body {
 }
 
 a {
-    color: #2f5994;
+    color: #9e45a3;
     text-decoration: underline;
 }
 
 a:hover, a:focus {
-    color: #542158;
+    color: #c74ecf;
 }
 
 h1 {
@@ -124,7 +124,7 @@ section.centered .content {
 
 header {
     background: #421945;
-    background: linear-gradient(#0b141f, #421945);
+    background: linear-gradient(#0d253f, #77367b);
     color: #fff;
     padding: 6em 0 4em;
 }
@@ -260,9 +260,9 @@ header p {
 /* numbers */
 
 #numbers {
-    padding: 5em 0;
+    padding: 7em 0;
     color: #fff;
-    background: #2d0c2f;
+    background: #571f5b;
 }
 
 #numbers ul {
@@ -313,7 +313,7 @@ h4 + .tags {
 .tags > li {
     display: inline-block;
     border-radius: 2em;
-    background: #1b2a40;
+    background: #15253c;
     color: #fff;
     padding: 0.2em 1em;
     line-height: 2em;
@@ -324,7 +324,7 @@ h4 + .tags {
 }
 
 .tags > li:hover {
-    background: #4d374f;
+    background: #8b2c94;
 }
 
 .tags > li a {
