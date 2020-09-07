@@ -17,12 +17,12 @@ body {
 }
 
 a {
-    color: #9e45a3;
+    color: #a34584;
     text-decoration: underline;
 }
 
 a:hover, a:focus {
-    color: #c74ecf;
+    color: #cf4ea4;
 }
 
 h1 {
@@ -123,8 +123,8 @@ section.centered .content {
 /* header */
 
 header {
-    background: #421945;
-    background: linear-gradient(#0d253f, #77367b);
+    background: #451936;
+    background: linear-gradient(#092645, #881462);
     color: #fff;
     padding: 6em 0 4em;
 }
@@ -149,7 +149,7 @@ header a {
 }
 
 header a:hover {
-    color: #ee53c2;
+    color: #ed53ba;
 }
 
 header p {
@@ -262,7 +262,8 @@ header p {
 #numbers {
     padding: 7em 0;
     color: #fff;
-    background: #571f5b;
+    background: #203072;
+    background: linear-gradient(to right, #7d1f5e, #b2711a);
 }
 
 #numbers ul {
@@ -319,17 +320,18 @@ h4 + .tags {
     line-height: 2em;
     font-weight: 300;
     vertical-align: bottom;
-    transition: all 0.2s ease-in;
+    transition: all 0.2s ease-out;
     cursor: default;
 }
 
-.tags > li:hover {
-    background: #8b2c94;
+.tags > li:hover,
+.tags > li:focus-within {
+    background: #a32178;
 }
 
 .tags > li a {
     cursor: pointer;
-    color: #fff;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -476,7 +478,7 @@ h4 + .tags {
 
 footer {
     background: #080a25;
-    background: linear-gradient(#281036, #080a25);
+    background: linear-gradient(#3b164f, #080a25);
     color: #fff;
 }
 
@@ -507,8 +509,8 @@ footer a:hover, footer a:focus  {
     font-size: 1em;
     border: 3px solid #fff;
     border-radius: 2em;
-    background: #8b185d;
-    background: linear-gradient(to left, #441148, #8b185d, #441148);
+    background: #8c1865;
+    background: linear-gradient(to left, #471135, #8c1865, #471135);
     background-size: 200% 100%;
     color: #fff !important;
     animation: button-roll 4s ease-in-out infinite;
