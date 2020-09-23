@@ -170,7 +170,7 @@ header address {
     border-radius: 2em;
     padding: 0.5em 1em;
     position: absolute;
-    bottom: 1em;
+    bottom: 2em;
     right: 1em;
     cursor: default;
 }
@@ -188,7 +188,6 @@ header address {
     }
 
     header address {
-        bottom: 2em;
         right: 2em;
     }
 }
@@ -520,11 +519,11 @@ h4 + .tags {
 footer {
     background: #081926;
     background: linear-gradient(#164d4f, #0b2e49);
-    color: #fff;
+    color: #b6bfbf;
 }
 
 footer a {
-    color: #dfb754;
+    color: #b6bfbf;
 }
 
 footer a:hover, footer a:focus  {
@@ -538,10 +537,12 @@ footer a:hover, footer a:focus  {
 }
 
 #get-started h2 {
+    color: #fff;
     font-weight: 400;
 }
 
 #get-started .teaser {
+    color: #fff;
     font-weight: 100;
 }
 
@@ -563,7 +564,7 @@ footer a:hover, footer a:focus  {
 }
 
 #get-started .button {
-    color: #dfb754;
+    color: #fff;
 }
 
 @keyframes button-roll {
@@ -578,6 +579,10 @@ footer a:hover, footer a:focus  {
     padding: 2em 0 0;
 }
 
+#faq h3 {
+    color: #fff;
+}
+
 .question {
     font-weight: 200;
     outline: none;
@@ -589,7 +594,7 @@ footer a:hover, footer a:focus  {
     margin: 0;
     padding: 0;
     background: 0;
-    color: #dfb754;
+    color: #b6bfbf;
     width: 100%;
     text-align: left;
     font-size: 110%;
