@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    color: #0c040d;
+    color: #04090d;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -17,12 +17,12 @@ body {
 }
 
 a {
-    color: #a34584;
+    color: #45a0a3;
     text-decoration: underline;
 }
 
 a:hover, a:focus {
-    color: #cf4ea4;
+    color: #4ecacf;
 }
 
 h1 {
@@ -80,13 +80,14 @@ section.centered .content {
 
 .button-primary:hover,
 .button-primary:focus {
+    color: #2da1a5 !important;
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
 .input {
     padding: 0.5em;
     font-size: 1em;
-    color: #0d202c;
+    color: #0d1e2b;
     background-color: rgba(255, 255, 255, 0.95);
     border: none;
 }
@@ -123,10 +124,11 @@ section.centered .content {
 /* header */
 
 header {
-    background: #451936;
-    background: linear-gradient(#092645, #881462);
+    position: relative;
+    background: #193245 url("../images/shai-pal-lpQwaLWhw9Q-unsplash-small.jpg") center no-repeat;
+    background-size: cover;
     color: #fff;
-    padding: 6em 0 4em;
+    padding: 180px 20px 100px 0;
 }
 
 header #introduction,
@@ -149,13 +151,54 @@ header a {
 }
 
 header a:hover {
-    color: #ed53ba;
+    color: #dfb754;
 }
 
 header p {
     font-size: 110%;
     margin: 0.5em 0 2em;
     text-align: left;
+}
+
+header address {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(2px);
+    font-style: normal;
+    font-size: 80%;
+    font-weight: 500;
+    color: #222;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    cursor: default;
+}
+
+@media (min-width: 300px) {
+    header {
+        padding: 180px 100px 100px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        background-image: url("../images/shai-pal-lpQwaLWhw9Q-unsplash.jpg");
+        padding: 400px 0 390px;
+    }
+
+    header address {
+        bottom: 2em;
+        right: 2em;
+    }
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    header {
+        background-image: url("../images/shai-pal-lpQwaLWhw9Q-unsplash-retina.jpg");
+    }
 }
 
 /* overview */
@@ -174,7 +217,6 @@ header p {
     max-width: 100%;
 }
 
-
 @media (min-width: 768px) {
     #portrait {
         width: 300px;
@@ -192,7 +234,6 @@ header p {
         left: 0;
     }
 }
-
 
 @media (min-width: 992px) {
     #overview .container {
@@ -262,8 +303,8 @@ header p {
 #numbers {
     padding: 7em 0;
     color: #fff;
-    background: #203072;
-    background: linear-gradient(to right, #7d1f5e, #311b4a);
+    background: #0e3e62;
+    background: linear-gradient(to right, #2da1a5, #0e3e62);
 }
 
 #numbers ul {
@@ -314,7 +355,7 @@ h4 + .tags {
 .tags > li {
     display: inline-block;
     border-radius: 2em;
-    background: #15253c;
+    background: #152c3d;
     color: #fff;
     padding: 0.2em 1em;
     line-height: 2em;
@@ -326,7 +367,7 @@ h4 + .tags {
 
 .tags > li:hover,
 .tags > li:focus-within {
-    background: #a32178;
+    background: #219fa3;
 }
 
 .tags > li a {
@@ -339,7 +380,7 @@ h4 + .tags {
 
 #testimonials {
     background: #f9f9ff;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(196, 187, 196, 0.25));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(213, 219, 224));
     padding: 6em 0;
 }
 
@@ -370,7 +411,7 @@ h4 + .tags {
     width: 250px;
     padding: 1em 2em 3em;
     background: #fff;
-    box-shadow: 0 0.6em 2em rgba(195, 158, 194, 0.3);
+    box-shadow: 0 0.6em 2em rgb(213, 225, 233);
     font-size: 90%;
     border-radius: 2em;
 }
@@ -433,7 +474,7 @@ h4 + .tags {
     #testimonials .next:hover,
     #testimonials .prev:focus,
     #testimonials .next:focus {
-        color: #2c042f;
+        color: #042d2e;
         cursor: pointer;
     }
 
@@ -477,13 +518,13 @@ h4 + .tags {
 /* footer */
 
 footer {
-    background: #080a25;
-    background: linear-gradient(#3b164f, #080a25);
+    background: #081926;
+    background: linear-gradient(#164d4f, #0b2e49);
     color: #fff;
 }
 
 footer a {
-    color: #ffbb28;
+    color: #dfb754;
 }
 
 footer a:hover, footer a:focus  {
@@ -507,10 +548,10 @@ footer a:hover, footer a:focus  {
 #get-started .button-primary {
     min-width: 150px;
     font-size: 1em;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     border-radius: 2em;
-    background: #8c1865;
-    background: linear-gradient(to left, #471135, #8c1865, #471135);
+    background: #185a8c;
+    background: linear-gradient(to left, #113047, #1b6163, #113047);
     background-size: 200% 100%;
     color: #fff !important;
     animation: button-roll 4s ease-in-out infinite;
@@ -522,7 +563,7 @@ footer a:hover, footer a:focus  {
 }
 
 #get-started .button {
-    color: #ffbb28;
+    color: #dfb754;
 }
 
 @keyframes button-roll {
@@ -548,7 +589,7 @@ footer a:hover, footer a:focus  {
     margin: 0;
     padding: 0;
     background: 0;
-    color: #ffbb28;
+    color: #dfb754;
     width: 100%;
     text-align: left;
     font-size: 110%;
