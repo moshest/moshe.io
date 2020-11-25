@@ -603,9 +603,11 @@ footer a:hover, footer a:focus  {
 }
 
 .question:focus > button,
-.question > button:focus {
-    cursor: default;
+.question > button:focus,
+.question > button:hover {
+    cursor: pointer;
     outline: none;
+    color: #dfb754;
 }
 
 .question > button:before {
