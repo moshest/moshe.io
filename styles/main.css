@@ -519,7 +519,7 @@ h4 + .tags {
 footer {
     background: #081926;
     background: linear-gradient(#164d4f, #0b2e49);
-    color: #b6bfbf;
+    color: #fff;
 }
 
 footer a {
@@ -581,6 +581,8 @@ footer a:hover, footer a:focus  {
 
 #faq h3 {
     color: #fff;
+    font-weight: 300;
+    text-decoration: underline;
 }
 
 .question {
@@ -599,7 +601,7 @@ footer a:hover, footer a:focus  {
     text-align: left;
     font-size: 110%;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .question:focus > button,
