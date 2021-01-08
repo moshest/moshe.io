@@ -151,7 +151,7 @@ header a {
 }
 
 header a:hover {
-    color: #dfb754;
+    color: #ffb600;
 }
 
 header p {
@@ -527,7 +527,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus  {
-    color: #dfb754;
+    color: #ffb600;
 }
 
 /* get started */
@@ -609,7 +609,7 @@ footer a:hover, footer a:focus  {
 .question > button:hover {
     cursor: pointer;
     outline: none;
-    color: #dfb754;
+    color: #ffb600;
 }
 
 .question > button:before {
